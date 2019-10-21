@@ -1,0 +1,33 @@
+{
+	"name": "inimist/captcha-demo",
+    "type": "cakephp-plugin",
+    "description": "CakePHP Captcha Plugin, Image, Math and Google Recaptcha Support",
+    "keywords": ["cakephp", "plugin", "captcha", "security", "recaptcha"],
+    "homepage": "https://github.com/inimist/cakephp-captcha-demo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arvind Kumar",
+            "email": "arvind@inimisttech.com",
+            "homepage": "https://inimisttech.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+		"cakephp/cakephp": "^3.5.0",
+        "inimist/cakephp-captcha": "^1.2"
+	},
+	"require-dev": {
+	},
+    "autoload": {
+		"psr-4": {
+			"CaptchaDemo\\": "src/"
+		}
+	},
+    "autoload-dev": {
+        "psr-4": {
+            "CaptchaDemo\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    }
+}
