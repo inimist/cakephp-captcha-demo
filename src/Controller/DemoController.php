@@ -33,7 +33,7 @@ class DemoController extends AppController
         if($this->request->is('post')) {
 			$this->Demo->setCaptcha('Captcha', $this->Captcha->getCode('Captcha'));
 			$demo = $this->Demo->newEntity($this->request->getData());
-			if ($demo->errors()) {
+			if ($demo->getErrors()) {
 				$this->Flash->error(__('Validation failed.'));
 			}	else	{
 				$this->Flash->success(__('Validation success.'));
@@ -47,7 +47,7 @@ class DemoController extends AppController
         if($this->request->is('post')) {
 			//$this->Demo->setCaptcha('Captcha', $this->Captcha->getCode('Captcha'));
 			$demo = $this->Demo->newEntity($this->request->getData());
-			if ($demo->errors()) {
+			if ($demo->getErrors()) {
 				$this->Flash->error(__('Validation failed.'));
 			}	else	{
 				$this->Flash->success(__('Validation success.'));
@@ -61,7 +61,7 @@ class DemoController extends AppController
 		if($this->request->is('post')) {
 			$this->Demo->setCaptcha('Captcha', $this->Captcha->getCode('Captcha'));
 			$demo = $this->Demo->newEntity($this->request->getData());
-			if ($demo->errors()) {
+			if ($demo->getErrors()) {
 				$this->Flash->error(__('Validation failed.'));
 			}	else	{
 				$this->Flash->success(__('Validation success.'));

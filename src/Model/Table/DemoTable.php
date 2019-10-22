@@ -55,11 +55,6 @@ class DemoTable extends Table
             ->requirePresence('name', 'create')
             ->notEmptyString('name');
 
-        $validator
-            ->email('email')
-            ->requirePresence('email', 'create')
-            ->notEmptyString('email');
-
         return $validator;
     }
 

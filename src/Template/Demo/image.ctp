@@ -15,7 +15,7 @@ $this->Html->css('/captcha_demo/css/styles', ['block' => true]);
 		<?= $this->Form->create($demo, ['novalidate']) ?>
 		<fieldset style="padding-left:0;">
 			<?php
-				echo $this->Form->input('name', ['placeholder'=>'Enter name']);
+				echo $this->Form->control('name', ['placeholder'=>'Enter name']);
 				echo $this->Captcha->create('Captcha',['reload_txt'=>false]);
 			?>
 			<?= $this->Form->button(__('Submit')) ?>
