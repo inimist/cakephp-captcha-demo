@@ -25,9 +25,3 @@ bin/cake migrations migrate -p CaptchaDemo
 ```
 
 After installation visit `my_app_url/captcha-demo/`
-
-You can delete this plugin using:
-
-```
-composer remove inimist/captcha-demo
-```
