@@ -30,7 +30,7 @@ class DemoTable extends Table
     {
         parent::initialize($config);
 
-        $this->setTable('_inimist_captcha_demo');
+        $this->setTable('captcha_demo');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
